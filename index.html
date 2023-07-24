@@ -13,11 +13,11 @@
 <body>
     <nav>
         <div class="input-group">
-  
-            
-          <i class="fas fa-search"></i>
-        <input placeholder="Nhập tên bài hát, ca sĩ, thể loại..." type="text" class="search" value="">
-            
+
+
+            <i class="fas fa-search"></i>
+            <input placeholder="Nhập tên bài hát, ca sĩ, thể loại..." type="text" class="search" value="">
+
         </div>
         <button id="loginBtn">Login</button>
     </nav>
@@ -27,25 +27,158 @@
         <h1><i class="fas fa-house-user"></i>Trang Chủ</h1>
         <hr>
         <h2>Âm Nhạc</h2>
-        
+
 
         <p><i class="far fa-heart"></i>Đã yêu thích</p>
         <p><i class="fas fa-icons"></i>Bài Hát đã nghe</p>
         <p><i class="fas fa-headphones"></i>Đã tải lên</p>
 
-        <h2>DAnh Sách Playlist</h2>
+        <h2>Playlist</h2>
 
     </aside>
 
     <article>
         <h1>Hot</h1>
-        <hr>
-        <div class="slide_show">
-
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="./SlideShow/img1.jpg" style="width:100%"> 
+            </div>
+            <div class="mySlides">
+                <img src="./SlideShow/img2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="./SlideShow/img3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="./SlideShow/img4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="./SlideShow/img5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="./SlideShow/img6.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <img src="./SlideShow/img7.jpg" style="width:100%">
+            </div>
         </div>
+        <script>
+            let slideIndex = 0;
+            showSlides();
 
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <h1>Xu Hướng</h1>
+
+        <div class="trend-section">
+            <div class="trend-item">
+                <img src="./photo/howyoulikethat.jfif" alt="">
+                <p>How You Like That</p>
+                <strong>Black Pink</strong>
+                <p><i class="far fa-eye"></i>1,7B View</p>
+                <p><i class="far fa-heart"></i> 3.76M Favorite</p>
+              <!-- Content for the first trend item goes here -->
+            </div>
+            <div class="trend-item">
+                <img src="./photo/faded.jpg" alt="">
+                <p>Faded</p>
+                <strong>Alan Walker</strong>
+                <p><i class="far fa-eye"></i>1,7B View</p>
+                <p><i class="far fa-heart"></i> 3.76M Favorite</p>
+              <!-- Content for the second trend item goes here -->
+            </div>
+            <div class="trend-item">
+                <img src="./photo/stay.jpg" alt="">
+                <p>Stay</p>
+                <strong>Justin Biber</strong>
+                <p><i class="far fa-eye"></i>1,7B View</p>
+                <p><i class="far fa-heart"></i> 3.76M Favorite</p>
+              <!-- Content for the third trend item goes here -->
+            
+            </div>
+            <div class="trend-item">
+                <img src="./photo/iflf.jpg " alt="">
+                <p>I Fucking Love You</p>
+                <strong>Bazzi</strong>
+                <p><i class="far fa-eye"></i>1,7B View</p>
+                <p><i class="far fa-heart"></i> 3.76M Favorite</p>
+              <!-- Content for the fourth trend item goes here -->
+            </div>
+            <div class="trend-item">
+                <img src="./photo/iflf.jpg " alt="">
+                <p>How You Like That</p>
+                <strong>Black Pink</strong>
+                <p><i class="far fa-eye"></i>1,7B View</p>
+                <p><i class="far fa-heart"></i> 3.76M Favorite</p>
+              <!-- Content for the fourth trend item goes here -->
+            </div>
+            <div class="trend-item">
+                <img src="./photo/iflf.jpg " alt="">
+                <p>How You Like That</p>
+                <strong>Black Pink</strong>
+                <p><i class="far fa-eye"></i>1,7B View</p>
+                <p><i class="far fa-heart"></i> 3.76M Favorite</p>
+              <!-- Content for the fourth trend item goes here -->
+            </div>
+            
+          </div>
+          <h1>Top bài hát triệu view</h1>
+
+
+
+          
+          <h1>Mới phát hành</h1>
+
+          <div class="new-releases-section">
+            <div class="new-release-item">
+              <img src="./photo/A-loi.jpg" alt="Album 1">
+              <div class="release-info">
+                <h3>Người Miền Núi Chất</h3>
+                <p>Double 2T</p>
+                <p>Release 2023-5-22</p>
+                <button>Listen</button>
+              </div>
+            </div>
+            <div class="new-release-item">
+              <img src="./photo/stay.jpg" alt="Album 2">
+              <div class="release-info">
+                <h3>Album Title 2</h3>
+                <p>Artist Name 2</p>
+                <p>Release Date 2</p>
+                <button>Listen</button>
+              </div>
+            </div>
+            <div class="new-release-item">
+                <img src="./photo/stay.jpg" alt="Album 2">
+                <div class="release-info">
+                  <h3>Album Title 2</h3>
+                  <p>Artist Name 2</p>
+                  <p>Release Date 2</p>
+                  <button>Listen</button>
+                </div>
+              </div>
+              <div class="new-release-item">
+                <img src="./photo/stay.jpg" alt="Album 2">
+                <div class="release-info">
+                  <h3>Album Title 2</h3>
+                  <p>Artist Name 2</p>
+                  <p>Release Date 2</p>
+                  <button>Listen</button>
+                </div>
+              </div>
+            <!-- Add more new-release-item divs for additional albums -->
+          </div>
     </article>
 </body>
 
 </html>
-
