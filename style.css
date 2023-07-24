@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #363636;
+    height: 50px;
+    display: flex;
+    align-items: center; /* Căn chỉnh phần tử theo chiều dọc */
+    justify-content: space-between; /* Căn chỉnh phần tử theo chiều ngang */
+    padding: 0 20px; /* Khoảng cách 20px giữa hai phần tử */
+}
+
+.input-group {
+    position: relative;
+    margin-left: 700px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.input-group input {
+    width: 300px;
+    padding-left: 30px; /* Để icon không che khu vực nhập dữ liệu */
+    background-color: #363636;
+    color: white;
+}
+aside {
+    width: 15%;
+    height: 1800px;
+    float: left;
+    background-color:#1C1C1C;
+}
+aside h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+aside p {
+    color: white;
+}
+aside h1 {
+    color: white;
+    margin-left: 15px;
+    color: #cad1dd;
+}
+aside i {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article {
+    width: 85%;
+    height: 2000px;
+    float: right;
+}
+
+article h1 {
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
